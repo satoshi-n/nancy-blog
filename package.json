@@ -8,13 +8,14 @@
     "eject": "vuepress eject src",
     "build": "vuepress build src",
     "firebase:deploy": "firebase deploy",
-    "deploy": "npm-run-all build firebase:deploy"
+    "deploy": "NODE_ENV=production npm-run-all build firebase:deploy"
   },
   "author": "nancy",
   "license": "ISC",
   "dependencies": {
-    "@vuepress/plugin-blog": "^1.0.0-alpha.32",
-    "vuepress": "^1.0.0-alpha.32"
+    "@vuepress/plugin-blog": "^1.0.0-alpha.36",
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.36",
+    "vuepress": "^1.0.0-alpha.36"
   },
   "devDependencies": {
     "node-sass": "^4.11.0",

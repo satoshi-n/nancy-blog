@@ -1,6 +1,10 @@
 module.exports = {
   plugins: [
     '@vuepress/blog',
+    [
+      '@vuepress/google-analytics',
+      { ga: 'UA-49035499-6' }
+    ],
   ],
   locales: {
     '/': {
@@ -9,5 +13,4 @@ module.exports = {
       description: 'js,vue,cssについての学びをアウトプットするブログです',
     }
   },
-  ga: 'UA-49035499-6',
 }
