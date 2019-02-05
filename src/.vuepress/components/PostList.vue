@@ -31,7 +31,6 @@
 export default {
   computed: {
     posts() {
-      console.info(this.$site.pages);
       return this.$site.pages
         .filter(post => post.regularPath.startsWith("/_posts/"))
         .map(post => {
