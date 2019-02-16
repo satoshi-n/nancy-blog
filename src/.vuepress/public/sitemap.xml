@@ -7,9 +7,14 @@
   <priority>1.0</priority>
 </url>
 <url>
+  <loc>https://nansystem.com/how-to-customize-bluma-with-node-sass/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-02-16T19:56:19+09:00</lastmod>
+</url>
+<url>
   <loc>https://nansystem.com/firebase-hosting-custom-domain/</loc>
   <priority>0.8</priority>
-  <lastmod>2019-02-04T21:26:30+09:00</lastmod>
+  <lastmod>2019-02-16T19:56:19+09:00</lastmod>
 </url>
 
 </urlset>
