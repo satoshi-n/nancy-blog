@@ -1,5 +1,6 @@
 ---
 title: BulmaをSCSSでカスタマイズできる環境をつくる
+description: BulmaをSCSSでカスタマイズできる環境を構築していく。まずはSCSSをコンパイルできるようにする。そして、BulmaをSCSSでカスタマイズできるようにしていく。
 date: 2019-02-16
 categories:
   - css
@@ -235,3 +236,7 @@ Bulmaの変数は[Variables | Bulma](https://bulma.io/documentation/customize/va
 色だけでなく、フォントやグリッドの幅も変更できる。
 
 準備はできた。あとはBulmaでサイトを作るだけだ✨
+
+
+・参考リンク  
+[With node-sass | Bulma](https://bulma.io/documentation/customize/with-node-sass/)

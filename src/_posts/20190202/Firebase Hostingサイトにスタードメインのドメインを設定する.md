@@ -1,5 +1,6 @@
 ---
 title: Firebase Hostingサイトにスタードメインのドメインを設定する
+description: 静的サイトをFirebase Hostingでデプロイし、ドメインを設定しSSLでアクセスできるようにする。
 date: 2019-02-02
 categories:
   - VuePress
