@@ -2,9 +2,8 @@
 title: Firebase Hostingサイトにスタードメインのドメインを設定する
 date: 2019-02-02
 categories:
-  - static site
-tags:
   - VuePress
+tags:
   - Firebase Hosting
   - スタードメイン
 permalink: /firebase-hosting-custom-domain
