@@ -24,7 +24,7 @@ npm initでnpmが使える環境を整える。
 ``` bash
 $ npm init
 
-package name: (porfolio-website) 
+package name: (portfolio-website) 
 version: (1.0.0) 
 description: 
 entry point: (index.js) 
@@ -45,7 +45,7 @@ SCSSファイルをコンパイルできるようにするため、node-sassを�
 $ npm install -D node-sass
 $ cat package.json 
 {
-  "name": "porfolio-website",
+  "name": "portfolio-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -131,7 +131,7 @@ Wrote CSS to /css/style.css
 $ npm install -D bulma
 $ cat package.json 
 {
-  "name": "porfolio-website",
+  "name": "portfolio-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
