@@ -6,13 +6,16 @@
   }
   &__title {
     border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0.8rem;
   }
   &__link {
     color: #666;
   }
   &__meta {
+    margin-bottom: 3rem;
+    font-size: .8rem;
     color: #999;
-    font-size: 0.8rem;
   }
 }
 </style>
@@ -22,8 +25,8 @@
     <li class="post-list__item" v-for="post in posts">
       <h2 class="post-list__title">
         <a class="post-list__link" :href="post.path">{{post.title}}</a>
-        <p class="post-list__meta">Published: <span class="post-list__date">{{ post.date }}</span></p>        
       </h2>
+      <p class="post-list__meta"><span class="post-list__date">{{ post.date }} 公開</span></p>
     </li>
   </ul>
 </template>
@@ -34,8 +37,9 @@ export default {
       return this.$site.pages
         .filter(post => post.regularPath.startsWith("/_posts/"))
         .map(post => {
+          console.info(post);
           const date = new Date(post.frontmatter.date);
-          post.date = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+          post.date = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
           return post;
         })
         .sort(
