@@ -37,7 +37,6 @@ export default {
       return this.$site.pages
         .filter(post => post.regularPath.startsWith("/_posts/"))
         .map(post => {
-          console.info(post);
           const date = new Date(post.frontmatter.date);
           post.date = `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`
           return post;

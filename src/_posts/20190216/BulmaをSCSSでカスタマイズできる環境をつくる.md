@@ -9,7 +9,9 @@ tags:
   - SCSS  
 permalink: /how-to-customize-bluma-with-node-sass
 ---
-# BulmaをSCSSでカスタマイズできる環境をつくる
+# {{ $page.title }}
+
+<PostMeta/>
 
 ## 環境構築
 BulmaをSCSSでカスタマイズできる環境を構築していく。  

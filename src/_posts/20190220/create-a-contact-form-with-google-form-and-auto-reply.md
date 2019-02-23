@@ -8,7 +8,10 @@ tags:
   - Google Forms
 permalink: /create-a-contact-form-with-google-form-and-auto-reply
 ---
-# Google フォームでお問い合わせフォームを作り、自動返信メールを送る
+# {{ $page.title }}
+
+<PostMeta/>
+
 静的サイトにお問い合わせフォームを設定したい。  
 その場合、AWS lambdaやGoogle Cloud Functionsでお問い合わせがあったことを知らせるアプリケーションを作成するか、
 他サービスのフォームを埋め込むことになる。  

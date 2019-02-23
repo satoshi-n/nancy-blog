@@ -1,6 +1,7 @@
 module.exports = {
   plugins: [
     '@vuepress/blog',
+    '@vuepress/last-updated',
     [
       '@vuepress/google-analytics',
       { ga: 'UA-49035499-6' }
@@ -19,5 +20,5 @@ module.exports = {
   ],
   themeConfig: {
     logo: '/logo.svg',
-  }
+  },
 }

@@ -9,7 +9,10 @@ tags:
   - スタードメイン
 permalink: /firebase-hosting-custom-domain
 ---
-# Firebase Hostingサイトにスタードメインのドメインを設定する
+# {{ $page.title }}
+
+<PostMeta/>
+
 VuePressで生成した静的サイトをFirebase Hostingに公開している。
 ドメインを設定していないので、スタードメインでドメインを取得し、
 そのドメインをFirebase Hostingに設定していく。
