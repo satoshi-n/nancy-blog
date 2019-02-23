@@ -16,5 +16,8 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: "180x180" }],
-  ]
+  ],
+  themeConfig: {
+    logo: '/logo.svg',
+  }
 }
