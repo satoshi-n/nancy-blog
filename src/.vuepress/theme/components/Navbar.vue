@@ -1,6 +1,6 @@
 <template>
   <header class="navbar">
-    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
+    <!-- <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/> -->
 
     <router-link
       :to="$localePath"
@@ -16,7 +16,6 @@
         ref="siteName"
         class="site-name"
         v-if="$siteTitle"
-        :class="{ 'can-hide': $site.themeConfig.logo }"
       >{{ $siteTitle }}</span>
     </router-link>
 
@@ -120,7 +119,7 @@ $navbar-horizontal-padding = 1.5rem
 
 @media (max-width: $MQMobile)
   .navbar
-    padding-left 4rem
+    // padding-left 4rem
     .can-hide
       display none
     .links
