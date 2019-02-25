@@ -37,9 +37,15 @@
 export default {
   computed: {
     hasLastUpdated() {
+      if(this.lastUpdated === '') {
+        return false;
+      }
       return this.lastUpdated !== this.publishedDate;
     },
     lastUpdated() {
+      if(this.$page.lastUpdated === undefined) {
+        return '';
+      }
       const date = new Date(this.$page.lastUpdated);
       return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
     },
