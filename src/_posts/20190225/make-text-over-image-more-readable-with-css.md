@@ -1,9 +1,9 @@
 ---
-title: 背景画像の上の文字を目立たせる方法
+title: CSS 背景画像の上の文字を目立たせる方法
 description: Adobe IllustratorやPhotoshopを使わず、CSSだけで文字を読みやすくするテクニックを紹介する。背景を暗くしたり、ぼかすことで文字が読みやすくなる。
 date: 2019-02-25
 categories:
-  - css
+  - CSS
 tags:
   - image
 permalink: /make-text-over-image-more-readable-with-css
