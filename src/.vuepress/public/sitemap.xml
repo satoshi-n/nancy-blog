@@ -7,14 +7,34 @@
   <priority>1.0</priority>
 </url>
 <url>
+  <loc>https://nansystem.com/use-gibo-to-access-to-gitignore-boilerplates/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-03-02T15:01:27+09:00</lastmod>
+</url>
+<url>
+  <loc>https://nansystem.com/rollup-plugin-commonjs-and-rollup-plugin-node-resolve/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-03-02T15:01:27+09:00</lastmod>
+</url>
+<url>
+  <loc>https://nansystem.com/make-text-over-image-more-readable-with-css/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-03-02T15:01:26+09:00</lastmod>
+</url>
+<url>
+  <loc>https://nansystem.com/create-a-contact-form-with-google-form-and-auto-reply/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-03-02T15:01:27+09:00</lastmod>
+</url>
+<url>
   <loc>https://nansystem.com/how-to-customize-bluma-with-node-sass/</loc>
   <priority>0.8</priority>
-  <lastmod>2019-02-16T19:56:19+09:00</lastmod>
+  <lastmod>2019-03-02T15:01:27+09:00</lastmod>
 </url>
 <url>
   <loc>https://nansystem.com/firebase-hosting-custom-domain/</loc>
   <priority>0.8</priority>
-  <lastmod>2019-02-16T19:56:19+09:00</lastmod>
+  <lastmod>2019-03-02T15:01:26+09:00</lastmod>
 </url>
 
 </urlset>
