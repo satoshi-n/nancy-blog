@@ -21,4 +21,7 @@ module.exports = {
   themeConfig: {
     logo: '/logo.svg',
   },
+  markdown: {
+    linkify: true
+  },
 }
