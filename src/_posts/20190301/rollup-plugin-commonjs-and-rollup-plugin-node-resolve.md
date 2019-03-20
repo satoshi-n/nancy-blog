@@ -18,7 +18,7 @@ Rollupで複数のファイルを1つにまとめる際に`rollup-plugin-commonj
 [[toc]]
 
 ## Rollupとは
-Rollupは、モジュールバンドラ(module bundler)だ。  
+Rollupとは、モジュールバンドラ(module bundler)だ。  
 モジュール(module)は機能ごとに分割されたファイルのことで、バンドラ(bundler)はそれらのモジュールをまとめることだ。RollupはES2015(ES6)をベースにしている。つまり、特に設定しなくても`import`、`export`文をつかって複数ファイルを1ファイルにまとめることができる。
 
 ## Rollupのインストール
