@@ -4,6 +4,8 @@
 
     <Content/>
 
+    <Profile v-if="isPost" />
+
     <footer class="page-edit">
       <div
         class="edit-link"
@@ -133,6 +135,10 @@ export default {
         || this.$site.themeConfig.editLinkText
         || `Edit this page`
       )
+    },
+
+    isPost () {
+      return this.$page.regularPath.startsWith('/_posts/')
     }
   },
 
