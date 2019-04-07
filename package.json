@@ -13,10 +13,10 @@
   "author": "nancy",
   "license": "ISC",
   "dependencies": {
-    "@vuepress/plugin-blog": "^1.0.0-alpha.42",
-    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.42",
-    "@vuepress/plugin-last-updated": "^1.0.0-alpha.42",
-    "vuepress": "^1.0.0-alpha.42"
+    "@vuepress/plugin-blog": "^1.0.0-alpha.47",
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.47",
+    "@vuepress/plugin-last-updated": "^1.0.0-alpha.47",
+    "vuepress": "^1.0.0-alpha.47"
   },
   "devDependencies": {
     "node-sass": "^4.11.0",

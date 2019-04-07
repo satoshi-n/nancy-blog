@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'
+import { resolvePage, outboundRE, endingSlashRE } from '../util'
 
 export default {
   props: ['sidebarItems'],
@@ -118,14 +118,8 @@ export default {
         docsRepo = repo
       } = this.$site.themeConfig
 
-      let path = normalize(this.$page.path)
-      if (endingSlashRE.test(path)) {
-        path += 'README.md'
-      } else {
-        path += '.md'
-      }
-      if (docsRepo && editLinks) {
-        return this.createEditLink(repo, docsRepo, docsDir, docsBranch, path)
+      if (docsRepo && editLinks && this.$page.relativePath) {
+        return this.createEditLink(repo, docsRepo, docsDir, docsBranch, this.$page.relativePath)
       }
     },
 
@@ -140,6 +134,7 @@ export default {
     isPost () {
       return this.$page.regularPath.startsWith('/_posts/')
     }
+
   },
 
   methods: {
@@ -152,8 +147,8 @@ export default {
         return (
           base.replace(endingSlashRE, '')
            + `/src`
-           + `/${docsBranch}`
-           + (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '')
+           + `/${docsBranch}/`
+           + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
            + path
            + `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
         )
@@ -162,11 +157,11 @@ export default {
       const base = outboundRE.test(docsRepo)
         ? docsRepo
         : `https://github.com/${docsRepo}`
-
       return (
         base.replace(endingSlashRE, '')
-        + `/edit/${docsBranch}`
-        + (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '')
+        + `/edit`
+        + `/${docsBranch}/`
+        + (docsDir ? docsDir.replace(endingSlashRE, '') + '/' : '')
         + path
       )
     }
@@ -183,7 +178,7 @@ function resolveNext (page, items) {
 
 function find (page, items, offset) {
   const res = []
-  flattern(items, res)
+  flatten(items, res)
   for (let i = 0; i < res.length; i++) {
     const cur = res[i]
     if (cur.type === 'page' && cur.path === decodeURIComponent(page.path)) {
@@ -192,10 +187,10 @@ function find (page, items, offset) {
   }
 }
 
-function flattern (items, res) {
+function flatten (items, res) {
   for (let i = 0, l = items.length; i < l; i++) {
     if (items[i].type === 'group') {
-      flattern(items[i].children || [], res)
+      flatten(items[i].children || [], res)
     } else {
       res.push(items[i])
     }

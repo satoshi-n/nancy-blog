@@ -1,6 +1,6 @@
 <template>
   <header class="navbar">
-    <!-- <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/> -->
+    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
     <router-link
       :to="$localePath"
@@ -16,6 +16,7 @@
         ref="siteName"
         class="site-name"
         v-if="$siteTitle"
+        :class="{ 'can-hide': $site.themeConfig.logo }"
       >{{ $siteTitle }}</span>
     </router-link>
 
@@ -29,17 +30,17 @@
         v-if="isAlgoliaSearch"
         :options="algolia"
       />
-      <SearchBox v-else-if="$site.themeConfig.search !== false"/>
+      <SearchBox v-else-if="$site.themeConfig.search !== false && $page.frontmatter.search !== false"/>
       <NavLinks class="can-hide"/>
     </div>
   </header>
 </template>
 
 <script>
-import SidebarButton from './SidebarButton.vue'
 import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from '@SearchBox'
-import NavLinks from './NavLinks.vue'
+import SidebarButton from '@theme/components/SidebarButton.vue'
+import NavLinks from '@theme/components/NavLinks.vue'
 
 export default {
   components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
@@ -119,7 +120,7 @@ $navbar-horizontal-padding = 1.5rem
 
 @media (max-width: $MQMobile)
   .navbar
-    // padding-left 4rem
+    padding-left 4rem
     .can-hide
       display none
     .links
