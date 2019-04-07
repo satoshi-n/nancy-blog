@@ -6,6 +6,10 @@ module.exports = {
       '@vuepress/google-analytics',
       { ga: 'UA-49035499-6' }
     ],
+    [
+      'sitemap',
+      { hostname: 'https://nansystem.com' },
+    ]
   ],
   locales: {
     '/': {
