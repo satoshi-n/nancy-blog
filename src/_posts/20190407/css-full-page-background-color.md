@@ -51,17 +51,26 @@ style.css
 ランディングページのような全画面のデザインが決まっている場合に、`<body>`全体に対して背景色を指定する方法をみていく。
 
 ### 100vh、100vwで全画面に背景を表示する
+HTMLは`body`直下に`div`を用意して`full-page`クラスをつけておく。
 
+HTML抜粋
 ``` html
-<body class="full-page">
-  こんにちは
+<body>
+  <div class="full-page">
+    こんにちは
+  </div>
 </body>
 ```
 
+`body`の`margin`、`padding`を0にしてリセットした上で、`full-page`クラスの`width`、`height`に<strong>ビューポート(画面表示領域)</strong>に対して100%、すなわち`100vw`、`100vh`を指定する。
+
 ``` css
-.full-page {
+body {
   margin: 0;
   padding: 0;
+}
+
+.full-page {
   width: 100vw;
   height: 100vh;
 
@@ -72,11 +81,15 @@ style.css
 ![100vw100vhで背景](./100vw100vh.png)
 
 ### html, bodyに100%で全画面に背景を表示する
+`full-page`クラスに`height`を**親の要素**に対して`100%`の高さとする。  
+`full-page`クラスのついている`div`の親要素として`body`、`html`がいるのでこの2つにも`height: 100%`を指定する。
 
 HTML抜粋
 ``` html
-<body class="full-page">
-  こんにちは
+<body>
+  <div class="full-page">
+    こんにちは
+  </div>
 </body>
 ```
 
