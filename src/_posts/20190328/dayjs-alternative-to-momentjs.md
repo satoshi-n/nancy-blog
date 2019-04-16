@@ -15,7 +15,8 @@ permalink: /dayjs-alternative-to-momentjs
 JavaScriptの日付操作には罠が多く、業務では日付操作を簡単かつ安全に操作するライブラリが使われる。日付操作のライブラリの中でも[Moment.js](https://github.com/moment/moment)(Star数40,601)はよく知られているが、ファイルサイズが大きくパフォーマンス改善の妨げになることがある。  
 そこでこの記事ではより軽量でMoment.jsの代替となる[dayjs](https://github.com/iamkun/dayjs)(Star数19,872)を紹介する。
 
-[[toc]]
+<!-- DOMException: Failed to execute 'appendChild' on 'Node': This node type does not support this method.
+[[toc]] -->
 
 ## dayjsとは
 dayjsとは、**日付操作を簡単にするJavaScriptのライブラリ**だ。Moment.jsのAPIと広く互換があり、gzip圧縮されたサイズは**2.71KBと軽量**なのが特徴だ。
