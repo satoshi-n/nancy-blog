@@ -1,5 +1,5 @@
 ---
-title: レスポンシブ対応のCSSフレームワークをSCSSでカスタマイズできる環境をつくる
+title: レスポンシブ対応のCSSフレームワークBlumaをSCSSでカスタマイズできる環境をつくる
 description: BulmaをSCSSでカスタマイズできる環境を構築していく。まずはSCSSをコンパイルできるようにする。そして、BulmaをSCSSでカスタマイズできるようにしていく。
 date: 2019-02-16
 categories:
@@ -67,7 +67,7 @@ npx node-sass scss/style.scss css/style.css
 
 出力された`style.css`を確認すると、変数が展開され`#FF141C`が設定されている。  
 これでSCSSのコンパイルが確認できた。
-```
+``` css
 body {
   background-color: #FF141C; }
 ```
@@ -87,10 +87,10 @@ SCSSを自動でコンパイルできるようにする。
 }
 ```
 
-`npm run css-build`を実行すると、`node-sass`コマンドを打っていたのと同じように`style.css`が出力される。そして、`npm start`でstyle.scssが変更されるたびに自動で`style.css`が生成されるようになる。
+`npm run css-build`を実行すると、`node-sass`コマンドを打っていたのと同じように`style.css`が出力される。そして、`npm start`で`style.scss`が変更されるたびに自動で`style.css`が生成されるようになる。
 
 ## bulmaをSCSSでカスタマイズできるようにする
-次はbulmaをSCSSとともに使えるようにするため、bulmaをインストールする。
+bulmaをインストールする。
 
 ``` sh
 npm install -D bulma
@@ -175,11 +175,8 @@ $primary: #FF141C;
 
 ![Bulmaの色を変更したHTML](./bluma-site-changed.png)
 
-Bulmaの変数は($primary)だけではなく、[Variables | Bulma](https://bulma.io/documentation/customize/variables/)にまとまっている。
-色だけでなく、フォントやグリッドの幅も変更できる。  
-
-以上でbulmaをSCSSでカスタマイズできる環境を構築できた✨
+Bulmaの変数は`$primary`だけではなく、フォントやグリッドの幅も変更できる。  
 
 ・参考リンク  
-https://bulma.io/documentation/customize/with-node-sass/
+https://bulma.io/documentation/customize/with-node-sass/  
 https://docs.npmjs.com/cli/run-script
