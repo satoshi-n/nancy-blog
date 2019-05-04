@@ -1,6 +1,6 @@
 ---
 title: MacでPythonが動く環境を構築して、Flaskから文字列を返すところまで
-description: 
+description: Macにpyenv、pipenvをインストールし、Python3.7.3、Flask1.0.2が動くまでの環境構築をする。
 date: 2019-04-29
 categories:
   - Python
@@ -21,8 +21,6 @@ MacのデフォルトのPythonは2系なので、まずは[Python3](https://www.
 
 環境構築には、[pyenv](https://github.com/pyenv/pyenv)と[pipenv](https://github.com/pypa/pipenv)を使うのがモダンらしい。  
 ツールの概要を簡単に掴んだ上で、MacでHomebrewを使いインストールしていく。  
-
-[[toc]]
 
 ## pyenvとは
 pyenvとは、**Python自体のバージョンを管理**するツールだ。  
