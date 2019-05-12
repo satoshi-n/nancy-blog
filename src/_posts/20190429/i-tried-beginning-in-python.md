@@ -4,8 +4,6 @@ description: Macにpyenv、pipenvをインストールし、Python3.7.3、Flask1
 date: 2019-04-29
 categories:
   - Python
-tags:
-  - Flask
 permalink: /i-tried-beginning-in-python
 ---
 
