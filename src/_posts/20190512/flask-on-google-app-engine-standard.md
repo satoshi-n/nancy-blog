@@ -103,6 +103,8 @@ HTML、JSONが想定通り返ってきている。
 
 ![gunicornで起動してJSONを確認](./gunicorn-json.png)
 
+なお、`dev_appserver.py`を使わないと`app.yaml`の内容が確認できないため、[dev_appserver.pyを使ってPython3.7を動かす](/run-google-app-engine-standard-python-with-local-dev-appserver/)方法を別記事にしている。  
+
 ## Google App EngineにFlaskをデプロイする
 次の手順で、ローカルで挙動を確認できたWebアプリケーションをデプロイする。  
 
