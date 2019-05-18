@@ -26,6 +26,9 @@ module.exports = {
     logo: '/logo.svg',
   },
   markdown: {
-    linkify: true
+    linkify: true,
+    plugins: [
+      'markdown-it-footnote'
+    ]
   },
 }
