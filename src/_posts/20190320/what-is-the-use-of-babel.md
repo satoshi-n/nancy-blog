@@ -16,6 +16,9 @@ permalink: /what-is-the-use-of-babel
 webpackやrollupのようなバンドラーや、Vue CLIのような開発ツールとともに[Babel](https://babeljs.io/)が使われている。しかし、そもそもBabelは何なのか、そしてどう使えばよいのだろうか。  
 この記事では、Babel7の挙動を確認していく。
 
+2019/5/22追記  
+[Babel 7.4.0で非推奨になった@babel/polyfillからcore-js@3に移行する](/migrate-babel-polyfill-to-core-js)方法についてはこちらの記事に書いた。  
+  
 [[toc]]
 
 ## Babelとは
