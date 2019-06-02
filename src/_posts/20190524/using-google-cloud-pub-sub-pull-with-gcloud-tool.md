@@ -5,7 +5,7 @@ date: 2019-05-24
 categories:
   - Google Cloud
 tags:
-  - Cloud Pub/Sub
+  - Cloud Pub Sub
 permalink: /using-google-cloud-pub-sub-pull-with-gcloud-tool
 ---
 

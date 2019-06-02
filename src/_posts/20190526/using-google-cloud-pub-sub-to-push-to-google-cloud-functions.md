@@ -5,7 +5,7 @@ date: 2019-05-26
 categories:
   - Google Cloud
 tags:
-  - Cloud Pub/Sub
+  - Cloud Pub Sub
   - Google Cloud Functions
 permalink: /using-google-cloud-pub-sub-to-push-to-google-cloud-functions
 ---

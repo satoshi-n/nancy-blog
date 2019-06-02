@@ -1,11 +1,11 @@
 ---
 title: Cloud Pub/Subのエミュレーターを使ってローカル環境でPythonから操作する
-description: Cloud Pub/Subのエミュレーターを使ってローカル環境でPythonから操作する
+description: Cloud Pub/Subのエミュレーターを使ってローカル環境で動かす。エミュレータはgcloudコマンドが使えないため、Pythonからトピック、サブスクリプションを作成し、メッセージをパブリッシュする。
 date: 2019-05-28
 categories:
   - Google Cloud
 tags:
-  - Cloud Pub/Sub
+  - Cloud Pub Sub
 permalink: /using-cloud-pub-sub-emulator
 ---
 
