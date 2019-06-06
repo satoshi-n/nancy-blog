@@ -1,5 +1,5 @@
 ---
-title: PythonでProtocol Buffersを操作する
+title: PythonでProtocol Buffersの文字列と数値の単純なメッセージを操作する
 description: protobufをインストールし、.protoファイルからPythonのコードを生成する。そのコードを使ってシリアライズ、デシリアライズを試す。
 date: 2019-06-02
 categories:
