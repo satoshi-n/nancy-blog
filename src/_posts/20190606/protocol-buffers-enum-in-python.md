@@ -8,7 +8,6 @@ tags:
   - Protocol Buffers
 permalink: /protocol-buffers-enum-in-python
 ---
-
 # {{ $page.title }}
 
 <PostMeta/>
@@ -18,7 +17,9 @@ permalink: /protocol-buffers-enum-in-python
 [[toc]]
 
 ## protoファイルにenumを定義する
-`proto`ファイルに次のような形式でenumを定義する。  
+
+`proto`ファイルに次のような形式で`enum`を定義する。  
+
 ```
 enum [enum名] {
   名前 = 値
@@ -38,7 +39,7 @@ https://developers.google.com/protocol-buffers/docs/proto3#enum
 enumの定義は、メッセージの中にあってもよい。  その場合、他のメッセージのフィールドとしてそのenumを使うことはできない。  
 
 `enum.proto`
-``` proto
+```
 syntax = "proto3";
 
 enum Suit {

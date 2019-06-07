@@ -18,7 +18,7 @@ Google App Engine StandardのPython3.7ではローカル開発での`dev_appserv
 つまり、URLと静的ファイルを紐づける`handlers`や、エラータイプごとにエラーページを指定する`error_handlers`の確認がローカルでできないことになる。  
 これでは不便なので、Python3.7でローカル開発時に`dev_appserver.py`を使う方法を記載する。  
 
-[[toc]]
+<!-- 重複するためコメントアウト[[toc]] -->
 
 ## app.yamlを用意する
 Python3.7で動かすために`runtime`を`python37`として、`entrypoint`で`gunicorn`で動くようにする。  
