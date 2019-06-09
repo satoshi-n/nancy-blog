@@ -7,7 +7,7 @@ categories:
   - Python
 tags:
   - Cloud Firestore
-permalink: /google-app-engine-standard-python-with-cloud-firestore
+permalink: /python-with-cloud-firestore
 ---
 
 # {{ $page.title }}
