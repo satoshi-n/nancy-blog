@@ -14,6 +14,22 @@
   font-size: .8rem;
   color: #999;
 }
+
+.social {
+  margin-top: 8px;
+}
+.social__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 8px 0;
+  display: inline-flex;
+}
+.social__item {
+  margin-right: 15px;
+}
+.fb-share-button .fb_iframe_widget {
+  margin-top: 0;
+}
 </style>
 
 <template>
@@ -30,6 +46,13 @@
         {{ category }}
       </span>
     </span>
+
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item"><a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+        <li class="social__item"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="true">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+      </ul>
+    </div>
   </div>
 </template>
 

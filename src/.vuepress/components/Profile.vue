@@ -59,7 +59,7 @@
         <p class="profile__name">なんしー</p>
         <p class="profile__job">フリーランスのWebプログラマー</p>
         <p class="profile__description">
-          Vue.jsでSPA開発をしています。このサイトでは主にwebpack、JavaScript、CSS、Vue.jsの記事を書いています。
+          Vue.jsでSPA開発をしています。このサイトでは主にwebpack、JavaScript、CSS、Vue.js、Python、Google Cloudの記事を書いています。
         </p>
         <ul class="profile__sns">
           <li class="profile__sns-item">
