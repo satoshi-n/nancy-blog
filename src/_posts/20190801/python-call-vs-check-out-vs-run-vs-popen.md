@@ -4,7 +4,7 @@ description:
 date: 2019-08-01
 categories:
   - Python
-permalink: /python-popen-vs-call-vs-check-output
+permalink: /python-call-vs-check-out-vs-run-vs-popen
 ---
 # {{ $page.title }}
 
