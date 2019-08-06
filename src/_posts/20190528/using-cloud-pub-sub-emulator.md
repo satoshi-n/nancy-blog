@@ -302,7 +302,10 @@ while True:
     time.sleep(60)
 ```
 
-・参考  
+## 関連記事
+[Cloud Pub/Subの配信タイプpullのサブスクリプションをgcloudツールで試す](/using-google-cloud-pub-sub-pull-with-gcloud-tool)
+
+## 参考  
 https://cloud.google.com/pubsub/docs/emulator  
 https://googleapis.github.io/google-cloud-python/latest/pubsub/  
 https://github.com/GoogleCloudPlatform/python-docs-samples/blob/master/pubsub/cloud-client/publisher.py  

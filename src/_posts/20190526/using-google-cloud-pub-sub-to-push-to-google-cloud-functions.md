@@ -134,6 +134,9 @@ D      helloPubSub  634756448558277  2019-05-26 08:24:56.608  Billing account no
 D      helloPubSub  634756448558277  2019-05-26 08:24:56.615  Function execution took 8 ms, finished with status: 'ok'
 ```
 
-・参考  
+## 関連記事
+[Cloud Pub/Subの配信タイプpullのサブスクリプションをgcloudツールで試す](/using-google-cloud-pub-sub-pull-with-gcloud-tool)
+
+## 参考  
 [push サブスクリプションの使用](https://cloud.google.com/pubsub/docs/push?hl=ja)  
 [Sample code](https://cloud.google.com/functions/docs/calling/pubsub)  

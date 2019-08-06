@@ -83,7 +83,7 @@ $ gcloud pubsub subscriptions pull --auto-ack my-sub
 └───────┴─────────────────┴────────────┘
 ```
 
-・参考  
+## 参考  
 https://cloud.google.com/pubsub/docs/overview  
 http://tech-blog.tsukaby.com/archives/1298  
 https://gist.github.com/voluntas/89000a06a7b79f1230ab  
