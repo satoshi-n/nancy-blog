@@ -1,5 +1,5 @@
 ---
-title: Cloud Pub/Subのエミュレーターを使ってローカル環境でPythonから操作する
+title: PythonでCloud Pub/Subのトピックとサブスクリプションを作成し、同期、非同期でpullする
 description: Cloud Pub/Subのエミュレーターを使ってローカル環境で動かす。エミュレータはgcloudコマンドが使えないため、Pythonからトピック、サブスクリプションを作成し、メッセージをパブリッシュする。
 date: 2019-05-28
 categories:
