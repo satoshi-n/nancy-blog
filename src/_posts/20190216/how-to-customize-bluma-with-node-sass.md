@@ -1,5 +1,5 @@
 ---
-title: レスポンシブ対応のCSSフレームワークBlumaをSCSSでカスタマイズできる環境をつくる
+title: レスポンシブ対応のCSSフレームワークBulmaをSCSSでカスタマイズできる環境をつくる
 description: BulmaをSCSSでカスタマイズできる環境を構築していく。まずはSCSSをコンパイルできるようにする。そして、BulmaをSCSSでカスタマイズできるようにしていく。
 date: 2019-02-16
 categories:
@@ -159,7 +159,7 @@ index.html
 ```
 
 ブラウザでHTMLを確認してみると、いい感じで読み込めてる。
-![Bulmaを読み込んだHTML](./bluma-site.png)
+![Bulmaを読み込んだHTML](./bulma-site.png)
 
 
 最後に、`style.scss`でbulmaのスタイルを変更できるか確かめる。
@@ -173,7 +173,7 @@ $primary: #FF141C;
 
 再度ブラウザでHTMLを確認してみると、「Primary」と書かれたボタンの色が赤色に変わっていることがわかる。
 
-![Bulmaの色を変更したHTML](./bluma-site-changed.png)
+![Bulmaの色を変更したHTML](./bulma-site-changed.png)
 
 Bulmaの変数は`$primary`だけではなく、フォントやグリッドの幅も変更できる。  
 

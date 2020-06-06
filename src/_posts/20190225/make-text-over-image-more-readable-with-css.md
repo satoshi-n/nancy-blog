@@ -24,8 +24,8 @@ permalink: /make-text-over-image-more-readable-with-css
 
 ## 準備
 まずは全画面に背景画像が表示されるようにし、テキストを画面の中央に配置する。  
-全画面中央配置にはBlumaを使っている。  
-BlumaをSCSSでカスタマイズする手順は下記の記事にまとめている。  
+全画面中央配置にはBulmaを使っている。  
+BulmaをSCSSでカスタマイズする手順は下記の記事にまとめている。  
 
 [BulmaをSCSSでカスタマイズできる環境をつくる](/how-to-customize-bluma-with-node-sass/)
 
