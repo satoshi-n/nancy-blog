@@ -3,7 +3,7 @@ title: Windows Terminalにgitのブランチ名を表示する
 description: Windows Terminalにgoをインストールし、powerline-goでブランチ名を表示する方法
 date: 2020-12-09
 categories:
-  - 開発環境
+  - wsl2
 permalink: /windows-terminal-powerline-go
 ---
 # {{ $page.title }}
