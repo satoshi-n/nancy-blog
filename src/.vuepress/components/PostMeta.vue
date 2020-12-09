@@ -14,6 +14,11 @@
   font-size: .8rem;
   color: #999;
 }
+.post-meta__link {
+  text-decoration: none;
+  color: #999;
+  margin-right: 1rem;
+}
 
 .social {
   margin-top: 8px;
@@ -43,7 +48,7 @@
     </span>
     <span class="post-meta__categories">
       <span v-for="category in $page.frontmatter.categories">
-        {{ category }}
+        <router-link class="post-meta__link" :to="`/category/${category}/`">{{category}}</router-link>
       </span>
     </span>
 

@@ -36,6 +36,7 @@ module.exports = {
     logo: '/logo.svg',
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/#modifyblogpluginoptions
+     * deprecated https://github.com/vuepress/vuepress-theme-blog/pull/48
      */
     modifyBlogPluginOptions(blogPlugnOptions) {
       const postDirectoryClassifierIndex = blogPlugnOptions.directories.findIndex(d => d.id === 'post')
@@ -80,7 +81,7 @@ module.exports = {
       },
       {
         text: 'GoogleCloud',
-        link: '/category/Google%20Cloud/'
+        link: '/category/Google Cloud/'
       },
       {
         text: 'TAG',
