@@ -52,12 +52,19 @@ html, body, #header, body {
   }
 }
 
+@media (min-width: 1280px) {
+  .vuepress-toc {
+      display: block;
+  }
+}
+
 .vuepress-toc {
-  max-width: 300px;
-  width 300px
+  max-width: 240px;
+  width 240px
   padding-top: 100px;
 
   .vuepress-toc-item {
+    padding: 0.1rem 0.6rem 0.1rem 0.6rem;
     a {
       overflow: initial;
       text-overflow: initial;
